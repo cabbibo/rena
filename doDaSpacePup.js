@@ -38,7 +38,7 @@ G.init = function(){
   }
 
   G.three.renderer.setSize( window.innerWidth, window.innerHeight );
-  G.three.renderer.setClearColor( 0xffffff , 1 )
+  G.three.renderer.setClearColor( 0x000000, 1 )
   G.three.renderer.domElement.id = "renderer"
   G.three.renderer.setPixelRatio(  2 );
   document.body.appendChild( G.three.renderer.domElement );
@@ -57,7 +57,7 @@ G.init = function(){
   //G.controls.noZoom = true;
   G.controls.noPan = true;
   G.controls.noRoll = true;
-  G.three.camera.position.z = .3;
+  G.three.camera.position.z = .15;
 
   G.doDaSpacePup();
 

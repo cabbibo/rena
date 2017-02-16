@@ -79,8 +79,8 @@ void main(){
      }
   }
 
-  if( logoCol.r > .7 ){
-    if( logoCol.b > (pNoise( vec3( vUv * 100. , time )) * .5 + pNoise( vec3( vUv * 300. , time * .5)) * .5) * logoCol.r ){
+  if( logoCol.r > .66 ){
+    if( logoCol.b > (pNoise( vec3( vUv * 10. , time )) * .5 + pNoise( vec3( vUv * 30. , time * .5)) * .5) * logoCol.r ){
       discard;
     }
   }
@@ -116,7 +116,7 @@ void main(){
 
     col *= n*.5 + .5;
 
-    if( logoCol.g < .5 ){ col *= 2.; }
+    if( logoCol.g > .5 ){ col *= 2.; }
     //col *= texture2D( t_audio , vec2(  abs( n.x ) , 0. ) ).xyz;
 
   }
